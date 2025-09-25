@@ -1,45 +1,57 @@
-const INITIAL_EMPLOYEES_STORE = [
+const INITIAL_ORDERS_STORE = [
   {
     id: 1,
-    name: "Edward Perry",
-    age: 25,
-    joinDate: "2025-07-16T00:00:00.000Z",
-    role: "Finance",
-    isFullTime: true,
+    name: "Smartphone",
+    client: "Steve Jobs",
+    price: 7000,
+    date: "2007-01-01T00:00:00.000Z",
+    status: "Market",
+    isBuying: true,
   },
   {
     id: 2,
-    name: "Josephine Drake",
-    age: 36,
-    joinDate: "2025-07-16T00:00:00.000Z",
-    role: "Market",
-    isFullTime: false,
+    name: "Car",
+    client: "Henry Ford",
+    price: 7000000,
+    date: "1908-01-01T00:00:00.000Z",
+    status: "Finance",
+    isBuying: false,
   },
   {
     id: 3,
-    name: "Cody Phillips",
-    age: 19,
-    joinDate: "2025-07-16T00:00:00.000Z",
-    role: "Development",
-    isFullTime: true,
+    name: "Plane",
+    client: "Brothers Wright",
+    price: 7000000000,
+    date: "1906-05-22T00:00:00.000Z",
+    status: "Development",
+    isBuying: true,
+  },
+  {
+    id: 4,
+    name: "Rocket",
+    client: "Elon Musk",
+    price: 70000000000,
+    date: "2008-09-01T00:00:00.000Z",
+    status: "Business",
+    isBuying: false,
   },
 ];
 
-export function getEmployeesStore() {
-  const stringifiedEmployees = localStorage.getItem("employees-store");
-  return stringifiedEmployees
-    ? JSON.parse(stringifiedEmployees)
-    : INITIAL_EMPLOYEES_STORE;
+export function getOrdersStore() {
+  const stringifiedOrders = localStorage.getItem("orders-store");
+  return stringifiedOrders
+    ? JSON.parse(stringifiedOrders)
+    : INITIAL_ORDERS_STORE;
 }
 
-export function setEmployeesStore(employees) {
-  return localStorage.setItem("employees-store", JSON.stringify(employees));
+export function setOrdersStore(orders) {
+  return localStorage.setItem("orders-store", JSON.stringify(orders));
 }
 
 export async function getMany({ paginationModel, filterModel, sortModel }) {
-  const employeesStore = getEmployeesStore();
+  const ordersStore = getOrdersStore();
 
-  let filteredEmployees = [...employeesStore];
+  let filteredOrders = [...ordersStore];
 
   // Apply filters (example only)
   if (filterModel?.items?.length) {
@@ -48,28 +60,28 @@ export async function getMany({ paginationModel, filterModel, sortModel }) {
         return;
       }
 
-      filteredEmployees = filteredEmployees.filter((employee) => {
-        const employeeValue = employee[field];
+      filteredOrders = filteredOrders.filter((order) => {
+        const orderValue = order[field];
 
         switch (operator) {
           case "contains":
-            return String(employeeValue)
+            return String(orderValue)
               .toLowerCase()
               .includes(String(value).toLowerCase());
           case "equals":
-            return employeeValue === value;
+            return orderValue === value;
           case "startsWith":
-            return String(employeeValue)
+            return String(orderValue)
               .toLowerCase()
               .startsWith(String(value).toLowerCase());
           case "endsWith":
-            return String(employeeValue)
+            return String(orderValue)
               .toLowerCase()
               .endsWith(String(value).toLowerCase());
           case ">":
-            return employeeValue > value;
+            return orderValue > value;
           case "<":
-            return employeeValue < value;
+            return orderValue < value;
           default:
             return true;
         }
@@ -79,7 +91,7 @@ export async function getMany({ paginationModel, filterModel, sortModel }) {
 
   // Apply sorting
   if (sortModel?.length) {
-    filteredEmployees.sort((a, b) => {
+    filteredOrders.sort((a, b) => {
       for (const { field, sort } of sortModel) {
         if (a[field] < b[field]) {
           return sort === "asc" ? -1 : 1;
@@ -95,101 +107,98 @@ export async function getMany({ paginationModel, filterModel, sortModel }) {
   // Apply pagination
   const start = paginationModel.page * paginationModel.pageSize;
   const end = start + paginationModel.pageSize;
-  const paginatedEmployees = filteredEmployees.slice(start, end);
+  const paginatedOrders = filteredOrders.slice(start, end);
 
   return {
-    items: paginatedEmployees,
-    itemCount: filteredEmployees.length,
+    items: paginatedOrders,
+    itemCount: filteredOrders.length,
   };
 }
 
-export async function getOne(employeeId) {
-  const employeesStore = getEmployeesStore();
+export async function getOne(orderId) {
+  const ordersStore = getOrdersStore();
 
-  const employeeToShow = employeesStore.find(
-    (employee) => employee.id === employeeId
-  );
+  const orderToShow = ordersStore.find((order) => order.id === orderId);
 
-  if (!employeeToShow) {
-    throw new Error("Employee not found");
+  if (!orderToShow) {
+    throw new Error("Order not found");
   }
-  return employeeToShow;
+  return orderToShow;
 }
 
 export async function createOne(data) {
-  const employeesStore = getEmployeesStore();
+  const ordersStore = getOrdersStore();
 
-  const newEmployee = {
-    id:
-      employeesStore.reduce((max, employee) => Math.max(max, employee.id), 0) +
-      1,
+  const newOrder = {
+    id: ordersStore.reduce((max, order) => Math.max(max, order.id), 0) + 1,
     ...data,
   };
 
-  setEmployeesStore([...employeesStore, newEmployee]);
+  setOrdersStore([...ordersStore, newOrder]);
 
-  return newEmployee;
+  return newOrder;
 }
 
-export async function updateOne(employeeId, data) {
-  const employeesStore = getEmployeesStore();
+export async function updateOne(orderId, data) {
+  const ordersStore = getOrdersStore();
 
-  let updatedEmployee = null;
+  let updatedOrder = null;
 
-  setEmployeesStore(
-    employeesStore.map((employee) => {
-      if (employee.id === employeeId) {
-        updatedEmployee = { ...employee, ...data };
-        return updatedEmployee;
+  setOrdersStore(
+    ordersStore.map((order) => {
+      if (order.id === orderId) {
+        updatedOrder = { ...order, ...data };
+        return updatedOrder;
       }
-      return employee;
+      return order;
     })
   );
 
-  if (!updatedEmployee) {
-    throw new Error("Employee not found");
+  if (!updatedOrder) {
+    throw new Error("Order not found");
   }
-  return updatedEmployee;
+  return updatedOrder;
 }
 
-export async function deleteOne(employeeId) {
-  const employeesStore = getEmployeesStore();
+export async function deleteOne(orderId) {
+  const ordersStore = getOrdersStore();
 
-  setEmployeesStore(
-    employeesStore.filter((employee) => employee.id !== employeeId)
-  );
+  setOrdersStore(ordersStore.filter((order) => order.id !== orderId));
 }
 
 // Validation follows the [Standard Schema](https://standardschema.dev/).
 
-export function validate(employee) {
+export function validate(order) {
   let issues = [];
 
-  if (!employee.name) {
-    issues = [...issues, { message: "Name is required", path: ["name"] }];
+  if (!order.name) {
+    issues = [...issues, { message: "Order name is required", path: ["name"] }];
   }
 
-  if (!employee.age) {
-    issues = [...issues, { message: "Age is required", path: ["age"] }];
-  } else if (employee.age < 18) {
-    issues = [...issues, { message: "Age must be at least 18", path: ["age"] }];
-  }
-
-  if (!employee.joinDate) {
+  if (!order.price) {
+    issues = [...issues, { message: "Price is required", path: ["price"] }];
+  } else if (order.price < 0) {
     issues = [
       ...issues,
-      { message: "Join date is required", path: ["joinDate"] },
+      { message: "Price must be at least 1", path: ["price"] },
     ];
   }
 
-  if (!employee.role) {
-    issues = [...issues, { message: "Role is required", path: ["role"] }];
-  } else if (!["Market", "Finance", "Development"].includes(employee.role)) {
+  if (!order.date) {
+    issues = [...issues, { message: "Date is required", path: ["date"] }];
+  }
+
+  if (!order.status) {
+    issues = [...issues, { message: "Status is required", path: ["status"] }];
+  } else if (
+    !["Market", "Finance", "Development", "Business"].includes(order.status)
+  ) {
     issues = [
       ...issues,
       {
-        message: 'Role must be "Market", "Finance" or "Development"',
-        path: ["role"],
+        message:
+          'status must be "Market", "Finance", "Business" or "Development"',
+        path: ["status"],
       },
     ];
   }
