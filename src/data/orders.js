@@ -177,7 +177,7 @@ export function validate(order) {
 
   if (!order.price) {
     issues = [...issues, { message: "Price is required", path: ["price"] }];
-  } else if (order.price < 0) {
+  } else if (order.price < 1) {
     issues = [
       ...issues,
       { message: "Price must be at least 1", path: ["price"] },

@@ -178,7 +178,7 @@ export default function OrderList() {
 
           notifications.show('Order deleted successfully.', {
             severity: 'success',
-            autoHideDuration: 3000,
+            autoHideDuration: 10000,
           });
           loadData();
         } catch (deleteError) {
@@ -186,7 +186,7 @@ export default function OrderList() {
             `Failed to delete order. Reason:' ${deleteError.message}`,
             {
               severity: 'error',
-              autoHideDuration: 3000,
+              autoHideDuration: 10000,
             },
           );
         }
@@ -206,7 +206,7 @@ export default function OrderList() {
   const columns = React.useMemo(
     () => [
       { field: 'id', headerName: 'ID', width: 10 },
-      { field: 'name', headerName: 'Order name', width: 140 },
+      { field: 'name', headerName: 'Order name', width: 120 },
       { field: 'client', headerName: 'Client', width: 140 },
       { field: 'price', headerName: 'Price', type: 'number', width: 120 },
       {
@@ -228,6 +228,7 @@ export default function OrderList() {
         field: 'actions',
           type: 'actions',
         flex: 1,
+        width: 80,
         align: 'right',
         getActions: ({ row }) => [
           <GridActionsCellItem
@@ -317,7 +318,7 @@ export default function OrderList() {
                 noRowsVariant: 'circular-progress',
               },
               baseIconButton: {
-                size: 'small',
+                size: 'medium',
               },
             }}
           />

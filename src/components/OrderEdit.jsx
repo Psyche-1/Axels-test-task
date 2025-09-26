@@ -76,14 +76,14 @@ function OrderEditForm({ initialValues, onSubmit }) {
       await onSubmit(formValues);
       notifications.show('Order edited successfully.', {
         severity: 'success',
-        autoHideDuration: 3000,
+        autoHideDuration: 10000,
       });
 
       navigate('/orders');
     } catch (editError) {
       notifications.show(`Failed to edit order. Reason: ${editError.message}`, {
         severity: 'error',
-        autoHideDuration: 3000,
+        autoHideDuration: 10000,
       });
       throw editError;
     }

@@ -75,7 +75,7 @@ export default function OrderCreate() {
       await createOrder(formValues);
       notifications.show('Order created successfully.', {
         severity: 'success',
-        autoHideDuration: 3000,
+        autoHideDuration: 10000,
       });
 
       navigate('/orders');
@@ -84,7 +84,7 @@ export default function OrderCreate() {
         `Failed to create order. Reason: ${createError.message}`,
         {
           severity: 'error',
-          autoHideDuration: 3000,
+          autoHideDuration: 10000,
         },
       );
       throw createError;

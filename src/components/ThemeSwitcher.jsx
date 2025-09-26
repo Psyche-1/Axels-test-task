@@ -27,7 +27,7 @@ export default function ThemeSwitcher() {
     >
       <div>
         <IconButton
-          size="small"
+          size="large"
           aria-label={`Switch to ${paletteMode === 'dark' ? 'light' : 'dark'} mode`}
           onClick={toggleMode}
         >

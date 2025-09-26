@@ -57,7 +57,7 @@ export default function DashboardLayout() {
       }}
     >
       <DashboardHeader
-        title=""
+        title="Orders Management"
         menuOpen={isNavigationExpanded}
         onToggleMenu={handleToggleHeaderMenu}
       />

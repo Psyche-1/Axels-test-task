@@ -78,14 +78,14 @@ export default function OrderShow() {
 
         notifications.show('Order deleted successfully.', {
           severity: 'success',
-          autoHideDuration: 3000,
+          autoHideDuration: 10000,
         });
       } catch (deleteError) {
         notifications.show(
           `Failed to delete order. Reason:' ${deleteError.message}`,
           {
             severity: 'error',
-            autoHideDuration: 3000,
+            autoHideDuration: 10000,
           },
         );
       }
