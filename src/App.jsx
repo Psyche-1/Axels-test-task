@@ -58,7 +58,7 @@ function App(props) {
           <NotificationsProvider>
             <DialogsProvider>
               <RouterProvider router={router} />
-          </DialogsProvider>
+            </DialogsProvider>
           </NotificationsProvider>
       </AppTheme>
       
