@@ -7,6 +7,13 @@ import OrderCreate from './components/OrderCreate';
 import OrderEdit from './components/OrderEdit';
 import NotificationsProvider from './hooks/useNotifications/NotificationsProvider';
 import DialogsProvider from './hooks/useDialogs/DialogsProvider';
+import AppTheme from './shared-theme/AppTheme';
+import {
+  dataGridCustomizations,
+  datePickersCustomizations,
+  sidebarCustomizations,
+  formInputCustomizations,
+} from './theme/customizations';
 
 const router = createHashRouter([
   {
@@ -37,15 +44,23 @@ const router = createHashRouter([
   },
 ]);
 
-function App() {
+const themeComponents = {
+  ...dataGridCustomizations,
+  ...datePickersCustomizations,
+  ...sidebarCustomizations,
+  ...formInputCustomizations,
+};
+
+function App(props) {
   return (
     <>
-      <NotificationsProvider>
-        <DialogsProvider>
-          <RouterProvider router={router} />
-       </DialogsProvider>
-      </NotificationsProvider>
-      
+        <AppTheme {...props} themeComponents={themeComponents}>
+          <NotificationsProvider>
+            <DialogsProvider>
+              <RouterProvider router={router} />
+          </DialogsProvider>
+          </NotificationsProvider>
+      </AppTheme>
       
     </>
   )
