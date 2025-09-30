@@ -10,8 +10,7 @@ import {
   updateOne as updateOrder,
   validate as validateOrder,
 } from '../data/orders';
-import OrderForm from './OrderForm';
-import PageContainer from './PageContainer';
+import { OrderForm, PageContainer } from '../components';
 
 function OrderEditForm({ initialValues, onSubmit }) {
   const { orderId } = useParams();

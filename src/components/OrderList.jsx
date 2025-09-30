@@ -17,7 +17,7 @@ import {
   deleteOne as deleteOrder,
   getMany as getOrders,
 } from '../data/orders';
-import PageContainer from './PageContainer';
+import { PageContainer } from '../components';
 
 const INITIAL_PAGE_SIZE = 10;
 
@@ -300,7 +300,7 @@ export default function OrderList() {
             initialState={initialState}
             showToolbar
             pageSizeOptions={[1, INITIAL_PAGE_SIZE, 25]}
-            sx={{
+              sx={{
               [`& .${gridClasses.columnHeader}, & .${gridClasses.cell}`]: {
                 outline: 'transparent',
               },

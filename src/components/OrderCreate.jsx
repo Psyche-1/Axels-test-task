@@ -5,8 +5,7 @@ import {
   createOne as createOrder,
   validate as validateOrder,
 } from '../data/orders';
-import OrderForm from './OrderForm';
-import PageContainer from './PageContainer';
+import { OrderForm, PageContainer } from '../components';
 
 const INITIAL_FORM_VALUES = {
   role: 'Market',

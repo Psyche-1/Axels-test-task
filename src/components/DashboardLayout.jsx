@@ -4,9 +4,8 @@ import useMediaQuery from "@mui/material/useMediaQuery";
 import Box from "@mui/material/Box";
 import Toolbar from "@mui/material/Toolbar";
 import { Outlet } from "react-router";
-import DashboardHeader from "./DashboardHeader";
-import DashboardSidebar from "./DashboardSidebar";
-
+import { DashboardHeader, DashboardSidebar } from '../components';
+  
 export default function DashboardLayout() {
   const theme = useTheme();
 

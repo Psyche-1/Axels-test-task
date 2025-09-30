@@ -1,8 +1,7 @@
 import * as React from 'react';
 import PropTypes from 'prop-types';
-import { styled, useTheme } from '@mui/material/styles';
+import { useTheme } from '@mui/material/styles';
 import Box from '@mui/material/Box';
-import MuiAppBar from '@mui/material/AppBar';
 import IconButton from '@mui/material/IconButton';
 import Toolbar from '@mui/material/Toolbar';
 import Tooltip from '@mui/material/Tooltip';
@@ -11,26 +10,8 @@ import MenuIcon from '@mui/icons-material/Menu';
 import MenuOpenIcon from '@mui/icons-material/MenuOpen';
 import Stack from '@mui/material/Stack';
 import { Link } from 'react-router';
-import ThemeSwitcher from './ThemeSwitcher';
-
-const AppBar = styled(MuiAppBar)(({ theme }) => ({
-  borderWidth: 0,
-  borderBottomWidth: 1,
-  borderStyle: 'solid',
-  borderColor: (theme.vars ?? theme).palette.divider,
-  boxShadow: 'none',
-  zIndex: theme.zIndex.drawer + 1,
-}));
-
-const LogoContainer = styled('div')({
-  position: 'relative',
-  height: 40,
-  display: 'flex',
-  alignItems: 'center',
-  '& img': {
-    maxHeight: 40,
-  },
-});
+import { ThemeSwitcher } from '../components';
+import { AppBar, LogoContainer } from '../styled/DashboardHeader.styles';
 
 function DashboardHeader({ logo, title, menuOpen, onToggleMenu }) {
   const theme = useTheme();
@@ -65,7 +46,7 @@ function DashboardHeader({ logo, title, menuOpen, onToggleMenu }) {
   );
 
   return (
-    <AppBar color="inherit" position="absolute" sx={{ displayPrint: 'none' }}>
+    <AppBar >
       <Toolbar sx={{ backgroundColor: 'inherit', mx: { xs: -0.75, sm: -1 } }}>
         <Stack
           direction="row"
