@@ -19,7 +19,7 @@ import {
   deleteOne as deleteOrder,
   getOne as getOrder,
 } from '../data/orders';
-import PageContainer from './PageContainer';
+import { PageContainer } from '../components';
 
 export default function OrderShow() {
   const { orderId } = useParams();

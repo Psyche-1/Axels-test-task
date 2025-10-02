@@ -1,10 +1,6 @@
-import './App.css'
+import CssBaseline from '@mui/material/CssBaseline';
 import { createHashRouter, RouterProvider } from 'react-router';
-import OrderList from './components/OrderList';
-import DashboardLayout from './components/DashboardLayout';
-import OrderShow from './components/OrderShow';
-import OrderCreate from './components/OrderCreate';
-import OrderEdit from './components/OrderEdit';
+import { OrderList, DashboardLayout, OrderShow, OrderCreate, OrderEdit } from './components';
 import NotificationsProvider from './hooks/useNotifications/NotificationsProvider';
 import DialogsProvider from './hooks/useDialogs/DialogsProvider';
 import AppTheme from './shared-theme/AppTheme';
@@ -14,6 +10,7 @@ import {
   sidebarCustomizations,
   formInputCustomizations,
 } from './theme/customizations';
+import GlobalStyles from './GlobalStyles';
 
 const router = createHashRouter([
   {
@@ -54,9 +51,11 @@ const themeComponents = {
 function App(props) {
   return (
     <>
-        <AppTheme {...props} themeComponents={themeComponents}>
+      <AppTheme {...props} themeComponents={themeComponents}>
+        <CssBaseline enableColorScheme />
           <NotificationsProvider>
-            <DialogsProvider>
+          <DialogsProvider>
+              <GlobalStyles />
               <RouterProvider router={router} />
             </DialogsProvider>
           </NotificationsProvider>

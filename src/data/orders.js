@@ -1,3 +1,6 @@
+import { useSelector } from "react-redux";
+import { selectFilteredOrdersMemo } from "../redux/orders/selectors";
+
 const INITIAL_ORDERS_STORE = [
   {
     id: 1,
@@ -37,6 +40,12 @@ const INITIAL_ORDERS_STORE = [
   },
 ];
 
+export function getOrdersFromServer() {
+  const filteredOrders = useSelector(selectFilteredOrdersMemo);
+
+  return filteredOrders;
+}
+
 export function getOrdersStore() {
   const stringifiedOrders = localStorage.getItem("orders-store");
   return stringifiedOrders
@@ -50,6 +59,7 @@ export function setOrdersStore(orders) {
 
 export async function getMany({ paginationModel, filterModel, sortModel }) {
   const ordersStore = getOrdersStore();
+  // const ordersStore = getOrdersFromServer();
 
   let filteredOrders = [...ordersStore];
 

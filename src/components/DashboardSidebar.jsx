@@ -14,9 +14,7 @@ import LayersIcon from '@mui/icons-material/Layers';
 import { matchPath, useLocation } from 'react-router';
 import DashboardSidebarContext from './DashboardSidebarContext';
 import { DRAWER_WIDTH, MINI_DRAWER_WIDTH } from '../constants';
-import DashboardSidebarPageItem from './DashboardSidebarPageItem';
-import DashboardSidebarHeaderItem from './DashboardSidebarHeaderItem';
-import DashboardSidebarDividerItem from './DashboardSidebarDividerItem';
+import { DashboardSidebarPageItem, DashboardSidebarHeaderItem, DashboardSidebarDividerItem } from '../components';
 import {
   getDrawerSxTransitionMixin,
   getDrawerWidthTransitionMixin,

@@ -2,7 +2,7 @@ import * as React from 'react';
 import PropTypes from 'prop-types';
 import ListSubheader from '@mui/material/ListSubheader';
 
-import DashboardSidebarContext from './DashboardSidebarContext';
+import { DashboardSidebarContext } from '../components';
 import { DRAWER_WIDTH } from '../constants';
 import { getDrawerSxTransitionMixin } from '../mixins';
 
