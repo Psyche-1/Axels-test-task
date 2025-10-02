@@ -1,36 +1,46 @@
 import * as React from 'react';
-import PropTypes from 'prop-types';
 import { useTheme } from '@mui/material/styles';
 import useMediaQuery from '@mui/material/useMediaQuery';
 import Box from '@mui/material/Box';
 import Drawer from '@mui/material/Drawer';
 import List from '@mui/material/List';
 import Toolbar from '@mui/material/Toolbar';
-
+import type {} from '@mui/material/themeCssVarsAugmentation';
 import PersonIcon from '@mui/icons-material/Person';
 import BarChartIcon from '@mui/icons-material/BarChart';
 import DescriptionIcon from '@mui/icons-material/Description';
 import LayersIcon from '@mui/icons-material/Layers';
 import { matchPath, useLocation } from 'react-router';
-import DashboardSidebarContext from './DashboardSidebarContext';
 import { DRAWER_WIDTH, MINI_DRAWER_WIDTH } from '../constants';
-import { DashboardSidebarPageItem, DashboardSidebarHeaderItem, DashboardSidebarDividerItem } from '../components';
+import {
+  DashboardSidebarContext,
+  DashboardSidebarPageItem,
+  DashboardSidebarHeaderItem,
+  DashboardSidebarDividerItem,
+} from "../components";
 import {
   getDrawerSxTransitionMixin,
   getDrawerWidthTransitionMixin,
 } from '../mixins';
 
-function DashboardSidebar({
+export interface DashboardSidebarProps {
+  expanded?: boolean;
+  setExpanded: (expanded: boolean) => void;
+  disableCollapsibleSidebar?: boolean;
+  container?: Element;
+}
+
+export default function DashboardSidebar({
   expanded = true,
   setExpanded,
   disableCollapsibleSidebar = false,
   container,
-}) {
+}: DashboardSidebarProps) {
   const theme = useTheme();
 
   const { pathname } = useLocation();
 
-  const [expandedItemIds, setExpandedItemIds] = React.useState([]);
+  const [expandedItemIds, setExpandedItemIds] = React.useState<string[]>([]);
 
   const isOverSmViewport = useMediaQuery(theme.breakpoints.up('sm'));
   const isOverMdViewport = useMediaQuery(theme.breakpoints.up('md'));
@@ -69,14 +79,14 @@ function DashboardSidebar({
   const mini = !disableCollapsibleSidebar && !expanded;
 
   const handleSetSidebarExpanded = React.useCallback(
-    (newExpanded) => () => {
+    (newExpanded: boolean) => () => {
       setExpanded(newExpanded);
     },
     [setExpanded],
   );
 
   const handlePageItemClick = React.useCallback(
-    (itemId, hasNestedNavigation) => {
+    (itemId: string, hasNestedNavigation: boolean) => {
       if (hasNestedNavigation && !mini) {
         setExpandedItemIds((previousValue) =>
           previousValue.includes(itemId)
@@ -96,7 +106,7 @@ function DashboardSidebar({
     isOverSmViewport && (!disableCollapsibleSidebar || isOverMdViewport);
 
   const getDrawerContent = React.useCallback(
-    (viewport) => (
+    (viewport: 'phone' | 'tablet' | 'desktop') => (
       <React.Fragment>
         <Toolbar />
         <Box
@@ -184,7 +194,7 @@ function DashboardSidebar({
   );
 
   const getDrawerSharedSx = React.useCallback(
-    (isTemporary) => {
+    (isTemporary: boolean) => {
       const drawerWidth = mini ? MINI_DRAWER_WIDTH : DRAWER_WIDTH;
 
       return {
@@ -267,20 +277,3 @@ function DashboardSidebar({
     </DashboardSidebarContext.Provider>
   );
 }
-
-DashboardSidebar.propTypes = {
-  container: (props, propName) => {
-    if (props[propName] == null) {
-      return null;
-    }
-    if (typeof props[propName] !== 'object' || props[propName].nodeType !== 1) {
-      return new Error(`Expected prop '${propName}' to be of type Element`);
-    }
-    return null;
-  },
-  disableCollapsibleSidebar: PropTypes.bool,
-  expanded: PropTypes.bool,
-  setExpanded: PropTypes.func.isRequired,
-};
-
-export default DashboardSidebar;

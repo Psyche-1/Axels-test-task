@@ -5,7 +5,16 @@ import Button from '@mui/material/Button';
 import IconButton from '@mui/material/IconButton';
 import Stack from '@mui/material/Stack';
 import Tooltip from '@mui/material/Tooltip';
-import { DataGrid, GridActionsCellItem, gridClasses } from '@mui/x-data-grid';
+import {
+  DataGrid,
+  GridActionsCellItem,
+  GridColDef,
+  GridFilterModel,
+  GridPaginationModel,
+  GridSortModel,
+  GridEventListener,
+  gridClasses,
+} from '@mui/x-data-grid';
 import AddIcon from '@mui/icons-material/Add';
 import RefreshIcon from '@mui/icons-material/Refresh';
 import EditIcon from '@mui/icons-material/Edit';
@@ -16,6 +25,7 @@ import useNotifications from '../hooks/useNotifications/useNotifications';
 import {
   deleteOne as deleteOrder,
   getMany as getOrders,
+  type Order,
 } from '../data/orders';
 import { PageContainer } from '../components';
 
@@ -29,31 +39,34 @@ export default function OrderList() {
   const dialogs = useDialogs();
   const notifications = useNotifications();
 
-  const [paginationModel, setPaginationModel] = React.useState({
+  const [paginationModel, setPaginationModel] = React.useState<GridPaginationModel>({
     page: searchParams.get('page') ? Number(searchParams.get('page')) : 0,
     pageSize: searchParams.get('pageSize')
       ? Number(searchParams.get('pageSize'))
       : INITIAL_PAGE_SIZE,
   });
-  const [filterModel, setFilterModel] = React.useState(
+  const [filterModel, setFilterModel] = React.useState<GridFilterModel>(
     searchParams.get('filter')
       ? JSON.parse(searchParams.get('filter') ?? '')
       : { items: [] },
   );
-  const [sortModel, setSortModel] = React.useState(
+  const [sortModel, setSortModel] = React.useState<GridSortModel>(
     searchParams.get('sort') ? JSON.parse(searchParams.get('sort') ?? '') : [],
   );
 
-  const [rowsState, setRowsState] = React.useState({
+  const [rowsState, setRowsState] = React.useState<{
+    rows: Order[];
+    rowCount: number;
+  }>({
     rows: [],
     rowCount: 0,
   });
 
   const [isLoading, setIsLoading] = React.useState(true);
-  const [error, setError] = React.useState(null);
+  const [error, setError] = React.useState<Error | null>(null);
 
   const handlePaginationModelChange = React.useCallback(
-    (model) => {
+    (model: GridPaginationModel) => {
       setPaginationModel(model);
 
       searchParams.set('page', String(model.page));
@@ -69,7 +82,7 @@ export default function OrderList() {
   );
 
   const handleFilterModelChange = React.useCallback(
-    (model) => {
+    (model: GridFilterModel) => {
       setFilterModel(model);
 
       if (
@@ -91,7 +104,7 @@ export default function OrderList() {
   );
 
   const handleSortModelChange = React.useCallback(
-    (model) => {
+    (model: GridSortModel) => {
       setSortModel(model);
 
       if (model.length > 0) {
@@ -125,7 +138,7 @@ export default function OrderList() {
         rowCount: listData.itemCount,
       });
     } catch (listDataError) {
-      setError(listDataError);
+      setError(listDataError as Error);
     }
 
     setIsLoading(false);
@@ -141,7 +154,7 @@ export default function OrderList() {
     }
   }, [isLoading, loadData]);
 
-  const handleRowClick = React.useCallback(
+  const handleRowClick = React.useCallback<GridEventListener<'rowClick'>>(
     ({ row }) => {
       navigate(`/orders/${row.id}`);
     },
@@ -153,14 +166,14 @@ export default function OrderList() {
   }, [navigate]);
 
   const handleRowEdit = React.useCallback(
-    (order) => () => {
+    (order: Order) => () => {
       navigate(`/orders/${order.id}/edit`);
     },
     [navigate],
   );
 
   const handleRowDelete = React.useCallback(
-    (order) => async () => {
+    (order: Order) => async () => {
       const confirmed = await dialogs.confirm(
         `Do you wish to delete ${order.name}?`,
         {
@@ -183,7 +196,7 @@ export default function OrderList() {
           loadData();
         } catch (deleteError) {
           notifications.show(
-            `Failed to delete order. Reason:' ${deleteError.message}`,
+            `Failed to delete order. Reason:' ${(deleteError as Error).message}`,
             {
               severity: 'error',
               autoHideDuration: 10000,
@@ -203,7 +216,7 @@ export default function OrderList() {
     [],
   );
 
-  const columns = React.useMemo(
+  const columns = React.useMemo<GridColDef[]>(
     () => [
       { field: 'id', headerName: 'ID', width: 10 },
       { field: 'name', headerName: 'Order name', width: 120 },
@@ -226,7 +239,7 @@ export default function OrderList() {
       { field: 'isBuying', headerName: 'Is buying', type: 'boolean' },
       {
         field: 'actions',
-          type: 'actions',
+        type: 'actions',
         flex: 1,
         width: 80,
         align: 'right',
@@ -300,7 +313,7 @@ export default function OrderList() {
             initialState={initialState}
             showToolbar
             pageSizeOptions={[1, INITIAL_PAGE_SIZE, 25]}
-              sx={{
+            sx={{
               [`& .${gridClasses.columnHeader}, & .${gridClasses.cell}`]: {
                 outline: 'transparent',
               },
@@ -318,7 +331,7 @@ export default function OrderList() {
                 noRowsVariant: 'circular-progress',
               },
               baseIconButton: {
-                size: 'medium',
+                size: 'small',
               },
             }}
           />

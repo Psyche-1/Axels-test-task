@@ -1,25 +1,22 @@
-import * as React from 'react';
-import Alert from '@mui/material/Alert';
-import Box from '@mui/material/Box';
-import Button from '@mui/material/Button';
-import CircularProgress from '@mui/material/CircularProgress';
-import Divider from '@mui/material/Divider';
-import Grid from '@mui/material/Grid';
-import Paper from '@mui/material/Paper';
-import Stack from '@mui/material/Stack';
-import Typography from '@mui/material/Typography';
-import EditIcon from '@mui/icons-material/Edit';
-import DeleteIcon from '@mui/icons-material/Delete';
-import ArrowBackIcon from '@mui/icons-material/ArrowBack';
-import { useNavigate, useParams } from 'react-router';
-import dayjs from 'dayjs';
-import { useDialogs } from '../hooks/useDialogs/useDialogs';
-import useNotifications from '../hooks/useNotifications/useNotifications';
-import {
-  deleteOne as deleteOrder,
-  getOne as getOrder,
-} from '../data/orders';
-import { PageContainer } from '../components';
+import * as React from "react";
+import Alert from "@mui/material/Alert";
+import Box from "@mui/material/Box";
+import Button from "@mui/material/Button";
+import CircularProgress from "@mui/material/CircularProgress";
+import Divider from "@mui/material/Divider";
+import Grid from "@mui/material/Grid";
+import Paper from "@mui/material/Paper";
+import Stack from "@mui/material/Stack";
+import Typography from "@mui/material/Typography";
+import EditIcon from "@mui/icons-material/Edit";
+import DeleteIcon from "@mui/icons-material/Delete";
+import ArrowBackIcon from "@mui/icons-material/ArrowBack";
+import { useNavigate, useParams } from "react-router";
+import dayjs from "dayjs";
+import { useDialogs } from "../hooks/useDialogs/useDialogs";
+import useNotifications from "../hooks/useNotifications/useNotifications";
+import { deleteOne as deleteOrder, getOne as getOrder } from "../data/orders";
+import { PageContainer } from "../components";
 
 export default function OrderShow() {
   const { orderId } = useParams();
@@ -63,10 +60,10 @@ export default function OrderShow() {
       `Do you wish to delete ${order.name}?`,
       {
         title: `Delete order?`,
-        severity: 'error',
-        okText: 'Delete',
-        cancelText: 'Cancel',
-      },
+        severity: "error",
+        okText: "Delete",
+        cancelText: "Cancel",
+      }
     );
 
     if (confirmed) {
@@ -74,19 +71,19 @@ export default function OrderShow() {
       try {
         await deleteOrder(Number(orderId));
 
-        navigate('/orders');
+        navigate("/orders");
 
-        notifications.show('Order deleted successfully.', {
-          severity: 'success',
+        notifications.show("Order deleted successfully.", {
+          severity: "success",
           autoHideDuration: 10000,
         });
       } catch (deleteError) {
         notifications.show(
           `Failed to delete order. Reason:' ${deleteError.message}`,
           {
-            severity: 'error',
+            severity: "error",
             autoHideDuration: 10000,
-          },
+          }
         );
       }
       setIsLoading(false);
@@ -94,7 +91,7 @@ export default function OrderShow() {
   }, [order, dialogs, orderId, navigate, notifications]);
 
   const handleBack = React.useCallback(() => {
-    navigate('/orders');
+    navigate("/orders");
   }, [navigate]);
 
   const renderShow = React.useMemo(() => {
@@ -103,11 +100,11 @@ export default function OrderShow() {
         <Box
           sx={{
             flex: 1,
-            display: 'flex',
-            flexDirection: 'column',
-            alignItems: 'center',
-            justifyContent: 'center',
-            width: '100%',
+            display: "flex",
+            flexDirection: "column",
+            alignItems: "center",
+            justifyContent: "center",
+            width: "100%",
             m: 1,
           }}
         >
@@ -124,8 +121,8 @@ export default function OrderShow() {
     }
 
     return order ? (
-      <Box sx={{ flexGrow: 1, width: '100%' }}>
-        <Grid container spacing={2} sx={{ width: '100%' }}>
+      <Box sx={{ flexGrow: 1, width: "100%" }}>
+        <Grid container spacing={2} sx={{ width: "100%" }}>
           <Grid size={{ xs: 12, sm: 6 }}>
             <Paper sx={{ px: 2, py: 1 }}>
               <Typography variant="overline">Order name</Typography>
@@ -154,7 +151,7 @@ export default function OrderShow() {
             <Paper sx={{ px: 2, py: 1 }}>
               <Typography variant="overline">Date</Typography>
               <Typography variant="body1" sx={{ mb: 1 }}>
-                {dayjs(order.joinDate).format('MMMM D, YYYY')}
+                {dayjs(order.date).format("MMMM D, YYYY")}
               </Typography>
             </Paper>
           </Grid>
@@ -170,7 +167,7 @@ export default function OrderShow() {
             <Paper sx={{ px: 2, py: 1 }}>
               <Typography variant="overline">Is buying</Typography>
               <Typography variant="body1" sx={{ mb: 1 }}>
-                {order.isBuying ? 'Yes' : 'No'}
+                {order.isBuying ? "Yes" : "No"}
               </Typography>
             </Paper>
           </Grid>
@@ -204,26 +201,16 @@ export default function OrderShow() {
         </Stack>
       </Box>
     ) : null;
-  }, [
-    isLoading,
-    error,
-    order,
-    handleBack,
-    handleOrderEdit,
-    handleOrderDelete,
-  ]);
+  }, [isLoading, error, order, handleBack, handleOrderEdit, handleOrderDelete]);
 
   const pageTitle = `Order ${orderId}`;
 
   return (
     <PageContainer
       title={pageTitle}
-      breadcrumbs={[
-        { title: 'Orders', path: '/orders' },
-        { title: pageTitle },
-      ]}
+      breadcrumbs={[{ title: "Orders", path: "/orders" }, { title: pageTitle }]}
     >
-      <Box sx={{ display: 'flex', flex: 1, width: '100%' }}>{renderShow}</Box>
+      <Box sx={{ display: "flex", flex: 1, width: "100%" }}>{renderShow}</Box>
     </PageContainer>
   );
 }
