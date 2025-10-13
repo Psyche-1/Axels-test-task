@@ -1,6 +1,7 @@
+import * as React from "react";
 import CssBaseline from '@mui/material/CssBaseline';
 import { createHashRouter, RouterProvider } from 'react-router';
-import { OrderList, DashboardLayout, OrderShow, OrderCreate, OrderEdit } from './components';
+import { OrderList, DashboardLayout, OrderShow, OrderCreate, OrderEdit } from './components/tsx';
 import NotificationsProvider from './hooks/useNotifications/NotificationsProvider';
 import DialogsProvider from './hooks/useDialogs/DialogsProvider';
 import AppTheme from './shared-theme/AppTheme';
@@ -17,19 +18,19 @@ const router = createHashRouter([
     Component: DashboardLayout,
     children: [
       {
-        path: '/employees',
+        path: '/orders',
         Component: OrderList,
       },
       {
-        path: '/employees/:employeeId',
+        path: '/orders/:orderId',
         Component: OrderShow,
       },
       {
-        path: '/employees/new',
+        path: '/orders/new',
         Component: OrderCreate,
       },
       {
-        path: '/employees/:employeeId/edit',
+        path: '/orders/:orderId/edit',
         Component: OrderEdit,
       },
       // Fallback route for the example routes in dashboard sidebar items
@@ -47,6 +48,8 @@ const themeComponents = {
   ...sidebarCustomizations,
   ...formInputCustomizations,
 };
+
+export const add = (a: number, b: number) => a + b;
 
 export default function CrudDashboard(props: { disableCustomTheme?: boolean }) {
   return (

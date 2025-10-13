@@ -1,4 +1,6 @@
 import { StrictMode } from 'react'
+import * as React from "react";
+window.React = React
 import { createRoot } from 'react-dom/client'
 import App from './App.tsx'
 import { persistor, store } from './redux/store.js'

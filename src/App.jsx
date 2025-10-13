@@ -1,0 +1,70 @@
+import CssBaseline from '@mui/material/CssBaseline';
+import { createHashRouter, RouterProvider } from 'react-router';
+import { OrderList, DashboardLayout, OrderShow, OrderCreate, OrderEdit } from './components/jsx';
+import NotificationsProvider from './hooks/useNotifications/NotificationsProvider';
+import DialogsProvider from './hooks/useDialogs/DialogsProvider';
+import AppTheme from './shared-theme/AppTheme';
+import {
+  dataGridCustomizations,
+  datePickersCustomizations,
+  sidebarCustomizations,
+  formInputCustomizations,
+} from './theme/customizations';
+import GlobalStyles from './GlobalStyles';
+
+const router = createHashRouter([
+  {
+    Component: DashboardLayout,
+    children: [
+      {
+        path: '/orders',
+        Component: OrderList,
+      },
+      {
+        path: '/orders/:orderId',
+        Component: OrderShow,
+      },
+      {
+        path: '/orders/new',
+        Component: OrderCreate,
+      },
+      {
+        path: '/orders/:orderId/edit',
+        Component: OrderEdit,
+      },
+      // Fallback route for the example routes in dashboard sidebar items
+      {
+        path: '*',
+        Component: OrderList,
+      },
+    ],
+  },
+]);
+
+export const add = (a, b) => a + b;
+
+const themeComponents = {
+  ...dataGridCustomizations,
+  ...datePickersCustomizations,
+  ...sidebarCustomizations,
+  ...formInputCustomizations,
+};
+
+function App(props) {
+  return (
+    <>
+      <AppTheme {...props} themeComponents={themeComponents}>
+        <CssBaseline enableColorScheme />
+        <NotificationsProvider>
+          <DialogsProvider>
+            <GlobalStyles />
+            <RouterProvider router={router} />
+          </DialogsProvider>
+        </NotificationsProvider>
+      </AppTheme>
+      
+    </>
+  )
+}
+
+export default App
