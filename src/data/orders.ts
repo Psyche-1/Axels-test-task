@@ -200,6 +200,10 @@ export function validate(order: Partial<Order>): ValidationResult {
     issues = [...issues, { message: 'Name is required', path: ['name'] }];
   }
 
+  if (!order.client) {
+    issues = [...issues, { message: 'Client is required', path: ['client'] }];
+  }
+
   if (!order.price) {
     issues = [...issues, { message: 'Price is required', path: ['price'] }];
   } else if (order.price < 1) {

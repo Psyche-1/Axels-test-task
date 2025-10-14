@@ -1,7 +1,7 @@
 import * as React from "react";
 import { render } from "@testing-library/react";
 import { expect, test } from "vitest";
-import { DashboardSidebarHeaderItem, DashboardSidebarContext } from "../tsx";
+import { DashboardSidebarHeaderItem, DashboardSidebarContext } from "../../components/tsx";
 
 const sidebarContextValue = {
   onPageItemClick: () => { },

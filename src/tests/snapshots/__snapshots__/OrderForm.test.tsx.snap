@@ -360,7 +360,7 @@ exports[`Snapshot test OrderForm 1`] = `
                   data-shrink="true"
                   id="order-status-label"
                 >
-                  Department
+                  Status
                 </label>
                 <div
                   class="MuiInputBase-root MuiOutlinedInput-root MuiInputBase-colorPrimary MuiInputBase-fullWidth MuiInputBase-formControl MuiSelect-root css-l6v5jm-MuiInputBase-root-MuiOutlinedInput-root-MuiSelect-root"
@@ -867,7 +867,7 @@ exports[`Snapshot test OrderForm 1`] = `
                 data-shrink="true"
                 id="order-status-label"
               >
-                Department
+                Status
               </label>
               <div
                 class="MuiInputBase-root MuiOutlinedInput-root MuiInputBase-colorPrimary MuiInputBase-fullWidth MuiInputBase-formControl MuiSelect-root css-l6v5jm-MuiInputBase-root-MuiOutlinedInput-root-MuiSelect-root"

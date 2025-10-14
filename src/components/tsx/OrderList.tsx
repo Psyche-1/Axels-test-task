@@ -218,8 +218,8 @@ export default function OrderList() {
 
   const columns = React.useMemo<GridColDef[]>(
     () => [
-      { field: 'id', headerName: 'ID', width: 10 },
-      { field: 'name', headerName: 'Order name', width: 120 },
+      { field: 'id', headerName: 'ID', width: 70 },
+      { field: 'name', headerName: 'Order name', width: 150 },
       { field: 'client', headerName: 'Client', width: 140 },
       { field: 'price', headerName: 'Price', type: 'number', width: 120 },
       {
@@ -236,7 +236,7 @@ export default function OrderList() {
         valueOptions: ['Market', 'Finance', 'Development', 'Business'],
         width: 120,
       },
-      { field: 'isBuying', headerName: 'Is buying', type: 'boolean' },
+      { field: 'isBuying', headerName: 'Is buying', type: 'boolean', width: 150 },
       {
         field: 'actions',
         type: 'actions',

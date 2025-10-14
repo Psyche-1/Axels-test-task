@@ -1,24 +1,25 @@
 import * as React from "react";
 import { render } from "@testing-library/react";
 import { expect, test } from "vitest";
-import { DashboardHeader } from "../tsx";
-import { BrowserRouter } from 'react-router-dom'
+import { DashboardSidebar } from "../../components/tsx";
 import { createHashRouter, RouterProvider } from "react-router";
+
+// const layoutRef = React.useRef<HTMLDivElement>(null);
 
 const router = createHashRouter([
   {
     children: [
       {
         path: '*',
-        Component: DashboardHeader,
+        Component: DashboardSidebar,
       },
     ],
   },
 ]);
 
-test('Snapshot test DashboardHeader', () => {
-  const component = render(
-    <RouterProvider router={router} />
+test('Snapshot test DashboardSidebar', () => {
+    const component = render(
+        <RouterProvider router={router} />
     );
   expect(component).toMatchSnapshot();
 });

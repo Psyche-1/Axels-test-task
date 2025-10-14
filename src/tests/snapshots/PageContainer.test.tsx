@@ -1,9 +1,9 @@
 import * as React from "react";
 import { render } from "@testing-library/react";
 import { expect, test } from "vitest";
-import { ThemeSwitcher } from "../tsx";
+import { PageContainer } from "../../components/tsx";
 
-test('Snapshot test ThemeSwitcher', () => {
-    const component = render(<ThemeSwitcher/>);
+test('Snapshot test PageContainer', () => {
+    const component = render(<PageContainer/>);
   expect(component).toMatchSnapshot();
 });

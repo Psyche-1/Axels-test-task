@@ -192,7 +192,7 @@ export default function OrderForm(props: OrderFormProps) {
           </Grid>
           <Grid size={{ xs: 12, sm: 6 }} sx={{ display: 'flex' }}>
             <FormControl error={!!formErrors.status} fullWidth>
-              <InputLabel id="order-status-label">Department</InputLabel>
+              <InputLabel id="order-status-label">Status</InputLabel>
               <Select
                 value={formValues.status ?? ''}
                 onChange={handleSelectFieldChange as SelectProps['onChange']}

@@ -104,7 +104,7 @@ exports[`Snapshot test OrderList 1`] = `
             >
               <div
                 class="MuiDataGrid-root MuiDataGrid-root--densityStandard MuiDataGrid-withBorderColor MuiDataGridVariables-1736526791 css-1u6b7ry-MuiDataGrid-root"
-                style="--DataGrid-hasScrollX: 1; --DataGrid-hasScrollY: 0; --DataGrid-scrollbarSize: 0px; --DataGrid-rowWidth: 750px; --DataGrid-columnsTotalWidth: 750px; --DataGrid-leftPinnedWidth: 0px; --DataGrid-rightPinnedWidth: 0px; --DataGrid-headerHeight: 56px; --DataGrid-headersTotalHeight: 56px; --DataGrid-topContainerHeight: 56px; --DataGrid-bottomContainerHeight: 0px; --height: 52px;"
+                style="--DataGrid-hasScrollX: 1; --DataGrid-hasScrollY: 0; --DataGrid-scrollbarSize: 0px; --DataGrid-rowWidth: 850px; --DataGrid-columnsTotalWidth: 850px; --DataGrid-leftPinnedWidth: 0px; --DataGrid-rightPinnedWidth: 0px; --DataGrid-headerHeight: 56px; --DataGrid-headersTotalHeight: 56px; --DataGrid-topContainerHeight: 56px; --DataGrid-bottomContainerHeight: 0px; --height: 52px;"
               >
                 <div
                   class="MuiDataGrid-mainContent"
@@ -321,7 +321,7 @@ exports[`Snapshot test OrderList 1`] = `
                               class="MuiDataGrid-columnHeader MuiDataGrid-columnHeader--sortable MuiDataGrid-withBorderColor"
                               data-field="id"
                               role="columnheader"
-                              style="width: 50px;"
+                              style="width: 70px;"
                               tabindex="0"
                             >
                               <div
@@ -421,7 +421,7 @@ exports[`Snapshot test OrderList 1`] = `
                               class="MuiDataGrid-columnHeader MuiDataGrid-columnHeader--sortable MuiDataGrid-withBorderColor"
                               data-field="name"
                               role="columnheader"
-                              style="width: 120px;"
+                              style="width: 150px;"
                               tabindex="-1"
                             >
                               <div
@@ -921,7 +921,7 @@ exports[`Snapshot test OrderList 1`] = `
                               class="MuiDataGrid-columnHeader MuiDataGrid-columnHeader--alignCenter MuiDataGrid-columnHeader--sortable MuiDataGrid-withBorderColor"
                               data-field="isBuying"
                               role="columnheader"
-                              style="width: 100px;"
+                              style="width: 150px;"
                               tabindex="-1"
                             >
                               <div
@@ -1075,7 +1075,7 @@ exports[`Snapshot test OrderList 1`] = `
                         </div>
                       </div>
                       <div
-                        class="MuiDataGrid-overlayWrapper css-16jip3q-MuiDataGrid-overlayWrapper"
+                        class="MuiDataGrid-overlayWrapper css-15uopd4-MuiDataGrid-overlayWrapper"
                       >
                         <div
                           class="MuiDataGrid-overlayWrapperInner css-1mbsuzk-MuiDataGrid-overlayWrapperInner"
@@ -1129,7 +1129,7 @@ exports[`Snapshot test OrderList 1`] = `
                     >
                       <div
                         class="MuiDataGrid-scrollbarContent"
-                        style="width: 750px;"
+                        style="width: 850px;"
                       />
                     </div>
                   </div>
@@ -1350,7 +1350,7 @@ exports[`Snapshot test OrderList 1`] = `
           >
             <div
               class="MuiDataGrid-root MuiDataGrid-root--densityStandard MuiDataGrid-withBorderColor MuiDataGridVariables-1736526791 css-1u6b7ry-MuiDataGrid-root"
-              style="--DataGrid-hasScrollX: 1; --DataGrid-hasScrollY: 0; --DataGrid-scrollbarSize: 0px; --DataGrid-rowWidth: 750px; --DataGrid-columnsTotalWidth: 750px; --DataGrid-leftPinnedWidth: 0px; --DataGrid-rightPinnedWidth: 0px; --DataGrid-headerHeight: 56px; --DataGrid-headersTotalHeight: 56px; --DataGrid-topContainerHeight: 56px; --DataGrid-bottomContainerHeight: 0px; --height: 52px;"
+              style="--DataGrid-hasScrollX: 1; --DataGrid-hasScrollY: 0; --DataGrid-scrollbarSize: 0px; --DataGrid-rowWidth: 850px; --DataGrid-columnsTotalWidth: 850px; --DataGrid-leftPinnedWidth: 0px; --DataGrid-rightPinnedWidth: 0px; --DataGrid-headerHeight: 56px; --DataGrid-headersTotalHeight: 56px; --DataGrid-topContainerHeight: 56px; --DataGrid-bottomContainerHeight: 0px; --height: 52px;"
             >
               <div
                 class="MuiDataGrid-mainContent"
@@ -1567,7 +1567,7 @@ exports[`Snapshot test OrderList 1`] = `
                             class="MuiDataGrid-columnHeader MuiDataGrid-columnHeader--sortable MuiDataGrid-withBorderColor"
                             data-field="id"
                             role="columnheader"
-                            style="width: 50px;"
+                            style="width: 70px;"
                             tabindex="0"
                           >
                             <div
@@ -1667,7 +1667,7 @@ exports[`Snapshot test OrderList 1`] = `
                             class="MuiDataGrid-columnHeader MuiDataGrid-columnHeader--sortable MuiDataGrid-withBorderColor"
                             data-field="name"
                             role="columnheader"
-                            style="width: 120px;"
+                            style="width: 150px;"
                             tabindex="-1"
                           >
                             <div
@@ -2167,7 +2167,7 @@ exports[`Snapshot test OrderList 1`] = `
                             class="MuiDataGrid-columnHeader MuiDataGrid-columnHeader--alignCenter MuiDataGrid-columnHeader--sortable MuiDataGrid-withBorderColor"
                             data-field="isBuying"
                             role="columnheader"
-                            style="width: 100px;"
+                            style="width: 150px;"
                             tabindex="-1"
                           >
                             <div
@@ -2321,7 +2321,7 @@ exports[`Snapshot test OrderList 1`] = `
                       </div>
                     </div>
                     <div
-                      class="MuiDataGrid-overlayWrapper css-16jip3q-MuiDataGrid-overlayWrapper"
+                      class="MuiDataGrid-overlayWrapper css-15uopd4-MuiDataGrid-overlayWrapper"
                     >
                       <div
                         class="MuiDataGrid-overlayWrapperInner css-1mbsuzk-MuiDataGrid-overlayWrapperInner"
@@ -2375,7 +2375,7 @@ exports[`Snapshot test OrderList 1`] = `
                   >
                     <div
                       class="MuiDataGrid-scrollbarContent"
-                      style="width: 750px;"
+                      style="width: 850px;"
                     />
                   </div>
                 </div>

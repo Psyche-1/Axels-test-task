@@ -185,6 +185,10 @@ export function validate(order) {
     issues = [...issues, { message: "Order name is required", path: ["name"] }];
   }
 
+  if (!order.client) {
+    issues = [...issues, { message: "Client is required", path: ["client"] }];
+  }
+
   if (!order.price) {
     issues = [...issues, { message: "Price is required", path: ["price"] }];
   } else if (order.price < 1) {

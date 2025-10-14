@@ -1,8 +1,8 @@
 import * as React from "react";
 import { render } from "@testing-library/react";
 import { expect, test } from "vitest";
-import { OrderShow } from "../tsx";
-import { createHashRouter, MemoryRouter, RouterProvider } from "react-router";
+import { OrderShow } from "../../components/tsx";
+import { MemoryRouter } from "react-router";
 import AppTheme from "../../shared-theme/AppTheme";
 import CssBaseline from "@mui/material/CssBaseline";
 import NotificationsProvider from "../../hooks/useNotifications/NotificationsProvider";

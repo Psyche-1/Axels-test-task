@@ -1,6 +1,6 @@
 // Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
 
-exports[`snapshot test 1`] = `
+exports[`Snapshot test DashboardLayout 1`] = `
 {
   "asFragment": [Function],
   "baseElement": <body>
@@ -112,10 +112,10 @@ exports[`snapshot test 1`] = `
           </div>
         </header>
         <div
-          class="MuiDrawer-root MuiDrawer-anchorLeft MuiDrawer-docked css-1wsrg03-MuiDrawer-docked"
+          class="MuiDrawer-root MuiDrawer-anchorLeft MuiDrawer-docked css-15jll89-MuiDrawer-docked"
         >
           <div
-            class="MuiPaper-root MuiPaper-elevation MuiPaper-elevation0 MuiDrawer-paper MuiDrawer-paperAnchorLeft MuiDrawer-paperAnchorDockedLeft css-1h0j2tk-MuiPaper-root-MuiDrawer-paper"
+            class="MuiPaper-root MuiPaper-elevation MuiPaper-elevation0 MuiDrawer-paper MuiDrawer-paperAnchorLeft MuiDrawer-paperAnchorDockedLeft css-pnr3w9-MuiPaper-root-MuiDrawer-paper"
             style="--Paper-shadow: var(--template-shadows-0); --Paper-overlay: var(--template-overlays-0);"
           >
             <div
@@ -355,10 +355,10 @@ exports[`snapshot test 1`] = `
           </div>
         </div>
         <div
-          class="MuiDrawer-root MuiDrawer-anchorLeft MuiDrawer-docked css-heci6h-MuiDrawer-docked"
+          class="MuiDrawer-root MuiDrawer-anchorLeft MuiDrawer-docked css-1m5pt1x-MuiDrawer-docked"
         >
           <div
-            class="MuiPaper-root MuiPaper-elevation MuiPaper-elevation0 MuiDrawer-paper MuiDrawer-paperAnchorLeft MuiDrawer-paperAnchorDockedLeft css-1h0j2tk-MuiPaper-root-MuiDrawer-paper"
+            class="MuiPaper-root MuiPaper-elevation MuiPaper-elevation0 MuiDrawer-paper MuiDrawer-paperAnchorLeft MuiDrawer-paperAnchorDockedLeft css-pnr3w9-MuiPaper-root-MuiDrawer-paper"
             style="--Paper-shadow: var(--template-shadows-0); --Paper-overlay: var(--template-overlays-0);"
           >
             <div
@@ -704,8 +704,8 @@ exports[`snapshot test 1`] = `
                     class="MuiBox-root css-15y92lb"
                   >
                     <div
-                      class="MuiDataGrid-root MuiDataGrid-root--densityStandard MuiDataGrid-withBorderColor MuiDataGridVariables-2677499979 css-o8l425-MuiDataGrid-root"
-                      style="--DataGrid-hasScrollX: 1; --DataGrid-hasScrollY: 0; --DataGrid-scrollbarSize: 0px; --DataGrid-rowWidth: 750px; --DataGrid-columnsTotalWidth: 750px; --DataGrid-leftPinnedWidth: 0px; --DataGrid-rightPinnedWidth: 0px; --DataGrid-headerHeight: 56px; --DataGrid-headersTotalHeight: 56px; --DataGrid-topContainerHeight: 56px; --DataGrid-bottomContainerHeight: 0px; --height: 52px;"
+                      class="MuiDataGrid-root MuiDataGrid-root--densityStandard MuiDataGrid-withBorderColor MuiDataGridVariables-1736526791 css-1u6b7ry-MuiDataGrid-root"
+                      style="--DataGrid-hasScrollX: 1; --DataGrid-hasScrollY: 0; --DataGrid-scrollbarSize: 0px; --DataGrid-rowWidth: 850px; --DataGrid-columnsTotalWidth: 850px; --DataGrid-leftPinnedWidth: 0px; --DataGrid-rightPinnedWidth: 0px; --DataGrid-headerHeight: 56px; --DataGrid-headersTotalHeight: 56px; --DataGrid-topContainerHeight: 56px; --DataGrid-bottomContainerHeight: 0px; --height: 52px;"
                     >
                       <div
                         class="MuiDataGrid-mainContent"
@@ -713,7 +713,7 @@ exports[`snapshot test 1`] = `
                       >
                         <div
                           aria-orientation="horizontal"
-                          class="MuiDataGrid-toolbar css-p7y1j-MuiDataGrid-toolbar"
+                          class="MuiDataGrid-toolbar css-1e8d8dc-MuiDataGrid-toolbar"
                           role="toolbar"
                         >
                           <button
@@ -798,7 +798,7 @@ exports[`snapshot test 1`] = `
                             role="separator"
                           />
                           <div
-                            class="MuiDataGrid-toolbarQuickFilter css-ci6wp4-MuiDataGrid-toolbarQuickFilter"
+                            class="MuiDataGrid-toolbarQuickFilter css-15tq9oh-MuiDataGrid-toolbarQuickFilter"
                             style="--trigger-width: 0px;"
                           >
                             <button
@@ -825,7 +825,7 @@ exports[`snapshot test 1`] = `
                             </button>
                             <div
                               aria-label="Search"
-                              class="MuiFormControl-root MuiTextField-root css-1iy1tv8-MuiFormControl-root-MuiTextField-root-MuiDataGrid-toolbarQuickFilterControl"
+                              class="MuiFormControl-root MuiTextField-root css-13ka3r-MuiFormControl-root-MuiTextField-root-MuiDataGrid-toolbarQuickFilterControl"
                             >
                               <div
                                 class="MuiInputBase-root MuiOutlinedInput-root MuiInputBase-colorPrimary MuiInputBase-formControl MuiInputBase-sizeSmall MuiInputBase-adornedStart css-hy7mzh-MuiInputBase-root-MuiOutlinedInput-root"
@@ -884,7 +884,7 @@ exports[`snapshot test 1`] = `
                           aria-colcount="8"
                           aria-multiselectable="false"
                           aria-rowcount="1"
-                          class="MuiDataGrid-main css-uk7t8p-MuiDataGrid-main"
+                          class="MuiDataGrid-main css-1bgckiu-MuiDataGrid-main"
                           role="grid"
                           tabindex="-1"
                         >
@@ -894,7 +894,7 @@ exports[`snapshot test 1`] = `
                             role="presentation"
                           />
                           <div
-                            class="MuiDataGrid-virtualScroller MuiDataGrid-virtualScroller--hasScrollX css-rktzwf-MuiDataGrid-virtualScroller"
+                            class="MuiDataGrid-virtualScroller MuiDataGrid-virtualScroller--hasScrollX css-1vigakz-MuiDataGrid-virtualScroller"
                             role="presentation"
                             style="overflow-x: hidden;"
                           >
@@ -922,7 +922,7 @@ exports[`snapshot test 1`] = `
                                     class="MuiDataGrid-columnHeader MuiDataGrid-columnHeader--sortable MuiDataGrid-withBorderColor"
                                     data-field="id"
                                     role="columnheader"
-                                    style="width: 50px;"
+                                    style="width: 70px;"
                                     tabindex="0"
                                   >
                                     <div
@@ -941,11 +941,11 @@ exports[`snapshot test 1`] = `
                                             class="MuiDataGrid-columnHeaderTitle css-1gqmilo-MuiDataGrid-columnHeaderTitle"
                                             data-mui-internal-clone-element="true"
                                           >
-                                            ID t
+                                            ID
                                           </div>
                                         </div>
                                         <div
-                                          class="MuiDataGrid-iconButtonContainer css-m14aj4-MuiDataGrid-iconButtonContainer"
+                                          class="MuiDataGrid-iconButtonContainer css-ltf0zy-MuiDataGrid-iconButtonContainer"
                                         >
                                           <button
                                             aria-label="Sort"
@@ -975,7 +975,7 @@ exports[`snapshot test 1`] = `
                                         <button
                                           aria-expanded="false"
                                           aria-haspopup="menu"
-                                          aria-label="ID t column menu"
+                                          aria-label="ID column menu"
                                           class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeSmall MuiDataGrid-menuIconButton css-1p3dfht-MuiButtonBase-root-MuiIconButton-root"
                                           data-mui-internal-clone-element="true"
                                           id="«r13»"
@@ -1022,7 +1022,7 @@ exports[`snapshot test 1`] = `
                                     class="MuiDataGrid-columnHeader MuiDataGrid-columnHeader--sortable MuiDataGrid-withBorderColor"
                                     data-field="name"
                                     role="columnheader"
-                                    style="width: 120px;"
+                                    style="width: 150px;"
                                     tabindex="-1"
                                   >
                                     <div
@@ -1045,7 +1045,7 @@ exports[`snapshot test 1`] = `
                                           </div>
                                         </div>
                                         <div
-                                          class="MuiDataGrid-iconButtonContainer css-m14aj4-MuiDataGrid-iconButtonContainer"
+                                          class="MuiDataGrid-iconButtonContainer css-ltf0zy-MuiDataGrid-iconButtonContainer"
                                         >
                                           <button
                                             aria-label="Sort"
@@ -1145,7 +1145,7 @@ exports[`snapshot test 1`] = `
                                           </div>
                                         </div>
                                         <div
-                                          class="MuiDataGrid-iconButtonContainer css-m14aj4-MuiDataGrid-iconButtonContainer"
+                                          class="MuiDataGrid-iconButtonContainer css-ltf0zy-MuiDataGrid-iconButtonContainer"
                                         >
                                           <button
                                             aria-label="Sort"
@@ -1245,7 +1245,7 @@ exports[`snapshot test 1`] = `
                                           </div>
                                         </div>
                                         <div
-                                          class="MuiDataGrid-iconButtonContainer css-m14aj4-MuiDataGrid-iconButtonContainer"
+                                          class="MuiDataGrid-iconButtonContainer css-ltf0zy-MuiDataGrid-iconButtonContainer"
                                         >
                                           <button
                                             aria-label="Sort"
@@ -1345,7 +1345,7 @@ exports[`snapshot test 1`] = `
                                           </div>
                                         </div>
                                         <div
-                                          class="MuiDataGrid-iconButtonContainer css-m14aj4-MuiDataGrid-iconButtonContainer"
+                                          class="MuiDataGrid-iconButtonContainer css-ltf0zy-MuiDataGrid-iconButtonContainer"
                                         >
                                           <button
                                             aria-label="Sort"
@@ -1445,7 +1445,7 @@ exports[`snapshot test 1`] = `
                                           </div>
                                         </div>
                                         <div
-                                          class="MuiDataGrid-iconButtonContainer css-m14aj4-MuiDataGrid-iconButtonContainer"
+                                          class="MuiDataGrid-iconButtonContainer css-ltf0zy-MuiDataGrid-iconButtonContainer"
                                         >
                                           <button
                                             aria-label="Sort"
@@ -1522,7 +1522,7 @@ exports[`snapshot test 1`] = `
                                     class="MuiDataGrid-columnHeader MuiDataGrid-columnHeader--alignCenter MuiDataGrid-columnHeader--sortable MuiDataGrid-withBorderColor"
                                     data-field="isBuying"
                                     role="columnheader"
-                                    style="width: 100px;"
+                                    style="width: 150px;"
                                     tabindex="-1"
                                   >
                                     <div
@@ -1545,7 +1545,7 @@ exports[`snapshot test 1`] = `
                                           </div>
                                         </div>
                                         <div
-                                          class="MuiDataGrid-iconButtonContainer css-m14aj4-MuiDataGrid-iconButtonContainer"
+                                          class="MuiDataGrid-iconButtonContainer css-ltf0zy-MuiDataGrid-iconButtonContainer"
                                         >
                                           <button
                                             aria-label="Sort"
@@ -1676,7 +1676,7 @@ exports[`snapshot test 1`] = `
                               </div>
                             </div>
                             <div
-                              class="MuiDataGrid-overlayWrapper css-16jip3q-MuiDataGrid-overlayWrapper"
+                              class="MuiDataGrid-overlayWrapper css-15uopd4-MuiDataGrid-overlayWrapper"
                             >
                               <div
                                 class="MuiDataGrid-overlayWrapperInner css-1mbsuzk-MuiDataGrid-overlayWrapperInner"
@@ -1708,7 +1708,7 @@ exports[`snapshot test 1`] = `
                               </div>
                             </div>
                             <div
-                              class="MuiDataGrid-virtualScrollerContent css-qghlpz-MuiDataGrid-virtualScrollerContent"
+                              class="MuiDataGrid-virtualScrollerContent css-aymtem-MuiDataGrid-virtualScrollerContent"
                               role="presentation"
                               style="width: auto; flex-basis: var(--DataGrid-overlayHeight, calc(var(--height) * 2)); flex-shrink: 0;"
                             >
@@ -1730,7 +1730,7 @@ exports[`snapshot test 1`] = `
                           >
                             <div
                               class="MuiDataGrid-scrollbarContent"
-                              style="width: 750px;"
+                              style="width: 850px;"
                             />
                           </div>
                         </div>
@@ -1840,9 +1840,9 @@ exports[`snapshot test 1`] = `
                         </div>
                       </div>
                       <style
-                        href="/MuiDataGridVariables-2677499979"
+                        href="/MuiDataGridVariables-1736526791"
                       >
-                        .MuiDataGridVariables-2677499979{--DataGrid-t-spacing-unit:var(--template-spacing);--DataGrid-t-color-border-base:var(--template-palette-TableCell-border);--DataGrid-t-color-background-base:var(--template-palette-background-paper);--DataGrid-t-color-background-overlay:var(--template-palette-background-paper);--DataGrid-t-color-background-backdrop:rgba(var(--template-palette-background-defaultChannel) / var(--template-palette-action-disabledOpacity));--DataGrid-t-color-foreground-base:var(--template-palette-text-primary);--DataGrid-t-color-foreground-muted:var(--template-palette-text-secondary);--DataGrid-t-color-foreground-accent:var(--template-palette-primary-dark);--DataGrid-t-color-foreground-disabled:var(--template-palette-text-disabled);--DataGrid-t-color-foreground-error:var(--template-palette-error-dark);--DataGrid-t-color-interactive-hover:var(--template-palette-action-hover);--DataGrid-t-color-interactive-hover-opacity:var(--template-palette-action-hoverOpacity);--DataGrid-t-color-interactive-focus:rgba(from var(--template-palette-primary-main) r g b / 1);--DataGrid-t-color-interactive-focus-opacity:var(--template-palette-action-focusOpacity);--DataGrid-t-color-interactive-disabled:rgba(from var(--template-palette-action-disabled) r g b / 1);--DataGrid-t-color-interactive-disabled-opacity:var(--template-palette-action-disabledOpacity);--DataGrid-t-color-interactive-selected:rgb(var(--template-palette-primary-mainChannel));--DataGrid-t-color-interactive-selected-opacity:var(--template-palette-action-selectedOpacity);--DataGrid-t-header-background-base:var(--template-palette-background-paper);--DataGrid-t-cell-background-pinned:var(--template-palette-background-paper);--DataGrid-t-radius-base:var(--template-shape-borderRadius);--DataGrid-t-typography-font-family-base:Inter, sans-serif;--DataGrid-t-typography-font-weight-light:300;--DataGrid-t-typography-font-weight-regular:400;--DataGrid-t-typography-font-weight-medium:500;--DataGrid-t-typography-font-weight-bold:700;--DataGrid-t-typography-font-body:var(--template-font-body2);--DataGrid-t-typography-font-small:var(--template-font-caption);--DataGrid-t-typography-font-large:var(--template-font-body1);--DataGrid-t-transition-easing-ease-in:cubic-bezier(0.4, 0, 1, 1);--DataGrid-t-transition-easing-ease-out:cubic-bezier(0.0, 0, 0.2, 1);--DataGrid-t-transition-easing-ease-in-out:cubic-bezier(0.4, 0, 0.2, 1);--DataGrid-t-transition-duration-short:200ms;--DataGrid-t-transition-duration-base:250ms;--DataGrid-t-transition-duration-long:300ms;--DataGrid-t-shadow-base:var(--template-shadows-2);--DataGrid-t-shadow-overlay:var(--template-shadows-8);--DataGrid-t-z-index-panel:var(--template-zIndex-modal);--DataGrid-t-z-index-menu:var(--template-zIndex-modal);}
+                        .MuiDataGridVariables-1736526791{--DataGrid-t-spacing-unit:var(--template-spacing);--DataGrid-t-color-border-base:var(--template-palette-TableCell-border);--DataGrid-t-color-background-base:var(--template-palette-background-paper);--DataGrid-t-color-background-overlay:var(--template-palette-background-paper);--DataGrid-t-color-background-backdrop:rgba(var(--template-palette-background-defaultChannel) / var(--template-palette-action-disabledOpacity));--DataGrid-t-color-foreground-base:var(--template-palette-text-primary);--DataGrid-t-color-foreground-muted:var(--template-palette-text-secondary);--DataGrid-t-color-foreground-accent:var(--template-palette-primary-dark);--DataGrid-t-color-foreground-disabled:var(--template-palette-text-disabled);--DataGrid-t-color-foreground-error:var(--template-palette-error-dark);--DataGrid-t-color-interactive-hover:var(--template-palette-action-hover);--DataGrid-t-color-interactive-hover-opacity:var(--template-palette-action-hoverOpacity);--DataGrid-t-color-interactive-focus:rgba(from var(--template-palette-primary-main) r g b / 1);--DataGrid-t-color-interactive-focus-opacity:var(--template-palette-action-focusOpacity);--DataGrid-t-color-interactive-disabled:rgba(from var(--template-palette-action-disabled) r g b / 1);--DataGrid-t-color-interactive-disabled-opacity:var(--template-palette-action-disabledOpacity);--DataGrid-t-color-interactive-selected:rgb(var(--template-palette-primary-mainChannel));--DataGrid-t-color-interactive-selected-opacity:var(--template-palette-action-selectedOpacity);--DataGrid-t-header-background-base:var(--template-palette-background-paper);--DataGrid-t-cell-background-pinned:var(--template-palette-background-paper);--DataGrid-t-radius-base:var(--template-shape-borderRadius);--DataGrid-t-typography-font-family-base:Inter, sans-serif;--DataGrid-t-typography-font-weight-light:300;--DataGrid-t-typography-font-weight-regular:400;--DataGrid-t-typography-font-weight-medium:500;--DataGrid-t-typography-font-weight-bold:700;--DataGrid-t-typography-font-body:var(--template-font-body2);--DataGrid-t-typography-font-small:var(--template-font-caption);--DataGrid-t-typography-font-large:var(--template-font-body1);--DataGrid-t-transition-easing-ease-in:cubic-bezier(0.4, 0, 1, 1);--DataGrid-t-transition-easing-ease-out:cubic-bezier(0.0, 0, 0.2, 1);--DataGrid-t-transition-easing-ease-in-out:cubic-bezier(0.4, 0, 0.2, 1);--DataGrid-t-transition-duration-short:200ms;--DataGrid-t-transition-duration-base:250ms;--DataGrid-t-transition-duration-long:300ms;--DataGrid-t-shadow-base:var(--template-shadows-2);--DataGrid-t-shadow-overlay:var(--template-shadows-8);--DataGrid-t-z-index-panel:var(--template-zIndex-modal);--DataGrid-t-z-index-menu:var(--template-zIndex-modal);}
                       </style>
                     </div>
                   </div>
@@ -1855,7 +1855,7 @@ exports[`snapshot test 1`] = `
     </div>
     <div
       aria-hidden="true"
-      class="MuiDrawer-root MuiDrawer-anchorLeft MuiDrawer-modal MuiModal-root MuiModal-hidden css-7z3nje-MuiModal-root-MuiDrawer-root"
+      class="MuiDrawer-root MuiDrawer-anchorLeft MuiDrawer-modal MuiModal-root MuiModal-hidden css-13mgtko-MuiModal-root-MuiDrawer-root"
       role="presentation"
     >
       <div
@@ -1869,7 +1869,7 @@ exports[`snapshot test 1`] = `
       />
       <div
         aria-modal="true"
-        class="MuiPaper-root MuiPaper-elevation MuiPaper-elevation16 MuiDrawer-paper MuiDrawer-paperAnchorLeft css-135i5wu-MuiPaper-root-MuiDrawer-paper"
+        class="MuiPaper-root MuiPaper-elevation MuiPaper-elevation16 MuiDrawer-paper MuiDrawer-paperAnchorLeft css-2jy5b1-MuiPaper-root-MuiDrawer-paper"
         role="dialog"
         style="--Paper-shadow: var(--template-shadows-16); --Paper-overlay: var(--template-overlays-16); visibility: hidden; -webkit-transform: translateX(-0px); transform: translateX(-0px);"
         tabindex="-1"
@@ -2223,10 +2223,10 @@ exports[`snapshot test 1`] = `
         </div>
       </header>
       <div
-        class="MuiDrawer-root MuiDrawer-anchorLeft MuiDrawer-docked css-1wsrg03-MuiDrawer-docked"
+        class="MuiDrawer-root MuiDrawer-anchorLeft MuiDrawer-docked css-15jll89-MuiDrawer-docked"
       >
         <div
-          class="MuiPaper-root MuiPaper-elevation MuiPaper-elevation0 MuiDrawer-paper MuiDrawer-paperAnchorLeft MuiDrawer-paperAnchorDockedLeft css-1h0j2tk-MuiPaper-root-MuiDrawer-paper"
+          class="MuiPaper-root MuiPaper-elevation MuiPaper-elevation0 MuiDrawer-paper MuiDrawer-paperAnchorLeft MuiDrawer-paperAnchorDockedLeft css-pnr3w9-MuiPaper-root-MuiDrawer-paper"
           style="--Paper-shadow: var(--template-shadows-0); --Paper-overlay: var(--template-overlays-0);"
         >
           <div
@@ -2466,10 +2466,10 @@ exports[`snapshot test 1`] = `
         </div>
       </div>
       <div
-        class="MuiDrawer-root MuiDrawer-anchorLeft MuiDrawer-docked css-heci6h-MuiDrawer-docked"
+        class="MuiDrawer-root MuiDrawer-anchorLeft MuiDrawer-docked css-1m5pt1x-MuiDrawer-docked"
       >
         <div
-          class="MuiPaper-root MuiPaper-elevation MuiPaper-elevation0 MuiDrawer-paper MuiDrawer-paperAnchorLeft MuiDrawer-paperAnchorDockedLeft css-1h0j2tk-MuiPaper-root-MuiDrawer-paper"
+          class="MuiPaper-root MuiPaper-elevation MuiPaper-elevation0 MuiDrawer-paper MuiDrawer-paperAnchorLeft MuiDrawer-paperAnchorDockedLeft css-pnr3w9-MuiPaper-root-MuiDrawer-paper"
           style="--Paper-shadow: var(--template-shadows-0); --Paper-overlay: var(--template-overlays-0);"
         >
           <div
@@ -2815,8 +2815,8 @@ exports[`snapshot test 1`] = `
                   class="MuiBox-root css-15y92lb"
                 >
                   <div
-                    class="MuiDataGrid-root MuiDataGrid-root--densityStandard MuiDataGrid-withBorderColor MuiDataGridVariables-2677499979 css-o8l425-MuiDataGrid-root"
-                    style="--DataGrid-hasScrollX: 1; --DataGrid-hasScrollY: 0; --DataGrid-scrollbarSize: 0px; --DataGrid-rowWidth: 750px; --DataGrid-columnsTotalWidth: 750px; --DataGrid-leftPinnedWidth: 0px; --DataGrid-rightPinnedWidth: 0px; --DataGrid-headerHeight: 56px; --DataGrid-headersTotalHeight: 56px; --DataGrid-topContainerHeight: 56px; --DataGrid-bottomContainerHeight: 0px; --height: 52px;"
+                    class="MuiDataGrid-root MuiDataGrid-root--densityStandard MuiDataGrid-withBorderColor MuiDataGridVariables-1736526791 css-1u6b7ry-MuiDataGrid-root"
+                    style="--DataGrid-hasScrollX: 1; --DataGrid-hasScrollY: 0; --DataGrid-scrollbarSize: 0px; --DataGrid-rowWidth: 850px; --DataGrid-columnsTotalWidth: 850px; --DataGrid-leftPinnedWidth: 0px; --DataGrid-rightPinnedWidth: 0px; --DataGrid-headerHeight: 56px; --DataGrid-headersTotalHeight: 56px; --DataGrid-topContainerHeight: 56px; --DataGrid-bottomContainerHeight: 0px; --height: 52px;"
                   >
                     <div
                       class="MuiDataGrid-mainContent"
@@ -2824,7 +2824,7 @@ exports[`snapshot test 1`] = `
                     >
                       <div
                         aria-orientation="horizontal"
-                        class="MuiDataGrid-toolbar css-p7y1j-MuiDataGrid-toolbar"
+                        class="MuiDataGrid-toolbar css-1e8d8dc-MuiDataGrid-toolbar"
                         role="toolbar"
                       >
                         <button
@@ -2909,7 +2909,7 @@ exports[`snapshot test 1`] = `
                           role="separator"
                         />
                         <div
-                          class="MuiDataGrid-toolbarQuickFilter css-ci6wp4-MuiDataGrid-toolbarQuickFilter"
+                          class="MuiDataGrid-toolbarQuickFilter css-15tq9oh-MuiDataGrid-toolbarQuickFilter"
                           style="--trigger-width: 0px;"
                         >
                           <button
@@ -2936,7 +2936,7 @@ exports[`snapshot test 1`] = `
                           </button>
                           <div
                             aria-label="Search"
-                            class="MuiFormControl-root MuiTextField-root css-1iy1tv8-MuiFormControl-root-MuiTextField-root-MuiDataGrid-toolbarQuickFilterControl"
+                            class="MuiFormControl-root MuiTextField-root css-13ka3r-MuiFormControl-root-MuiTextField-root-MuiDataGrid-toolbarQuickFilterControl"
                           >
                             <div
                               class="MuiInputBase-root MuiOutlinedInput-root MuiInputBase-colorPrimary MuiInputBase-formControl MuiInputBase-sizeSmall MuiInputBase-adornedStart css-hy7mzh-MuiInputBase-root-MuiOutlinedInput-root"
@@ -2995,7 +2995,7 @@ exports[`snapshot test 1`] = `
                         aria-colcount="8"
                         aria-multiselectable="false"
                         aria-rowcount="1"
-                        class="MuiDataGrid-main css-uk7t8p-MuiDataGrid-main"
+                        class="MuiDataGrid-main css-1bgckiu-MuiDataGrid-main"
                         role="grid"
                         tabindex="-1"
                       >
@@ -3005,7 +3005,7 @@ exports[`snapshot test 1`] = `
                           role="presentation"
                         />
                         <div
-                          class="MuiDataGrid-virtualScroller MuiDataGrid-virtualScroller--hasScrollX css-rktzwf-MuiDataGrid-virtualScroller"
+                          class="MuiDataGrid-virtualScroller MuiDataGrid-virtualScroller--hasScrollX css-1vigakz-MuiDataGrid-virtualScroller"
                           role="presentation"
                           style="overflow-x: hidden;"
                         >
@@ -3033,7 +3033,7 @@ exports[`snapshot test 1`] = `
                                   class="MuiDataGrid-columnHeader MuiDataGrid-columnHeader--sortable MuiDataGrid-withBorderColor"
                                   data-field="id"
                                   role="columnheader"
-                                  style="width: 50px;"
+                                  style="width: 70px;"
                                   tabindex="0"
                                 >
                                   <div
@@ -3052,11 +3052,11 @@ exports[`snapshot test 1`] = `
                                           class="MuiDataGrid-columnHeaderTitle css-1gqmilo-MuiDataGrid-columnHeaderTitle"
                                           data-mui-internal-clone-element="true"
                                         >
-                                          ID t
+                                          ID
                                         </div>
                                       </div>
                                       <div
-                                        class="MuiDataGrid-iconButtonContainer css-m14aj4-MuiDataGrid-iconButtonContainer"
+                                        class="MuiDataGrid-iconButtonContainer css-ltf0zy-MuiDataGrid-iconButtonContainer"
                                       >
                                         <button
                                           aria-label="Sort"
@@ -3086,7 +3086,7 @@ exports[`snapshot test 1`] = `
                                       <button
                                         aria-expanded="false"
                                         aria-haspopup="menu"
-                                        aria-label="ID t column menu"
+                                        aria-label="ID column menu"
                                         class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeSmall MuiDataGrid-menuIconButton css-1p3dfht-MuiButtonBase-root-MuiIconButton-root"
                                         data-mui-internal-clone-element="true"
                                         id="«r13»"
@@ -3133,7 +3133,7 @@ exports[`snapshot test 1`] = `
                                   class="MuiDataGrid-columnHeader MuiDataGrid-columnHeader--sortable MuiDataGrid-withBorderColor"
                                   data-field="name"
                                   role="columnheader"
-                                  style="width: 120px;"
+                                  style="width: 150px;"
                                   tabindex="-1"
                                 >
                                   <div
@@ -3156,7 +3156,7 @@ exports[`snapshot test 1`] = `
                                         </div>
                                       </div>
                                       <div
-                                        class="MuiDataGrid-iconButtonContainer css-m14aj4-MuiDataGrid-iconButtonContainer"
+                                        class="MuiDataGrid-iconButtonContainer css-ltf0zy-MuiDataGrid-iconButtonContainer"
                                       >
                                         <button
                                           aria-label="Sort"
@@ -3256,7 +3256,7 @@ exports[`snapshot test 1`] = `
                                         </div>
                                       </div>
                                       <div
-                                        class="MuiDataGrid-iconButtonContainer css-m14aj4-MuiDataGrid-iconButtonContainer"
+                                        class="MuiDataGrid-iconButtonContainer css-ltf0zy-MuiDataGrid-iconButtonContainer"
                                       >
                                         <button
                                           aria-label="Sort"
@@ -3356,7 +3356,7 @@ exports[`snapshot test 1`] = `
                                         </div>
                                       </div>
                                       <div
-                                        class="MuiDataGrid-iconButtonContainer css-m14aj4-MuiDataGrid-iconButtonContainer"
+                                        class="MuiDataGrid-iconButtonContainer css-ltf0zy-MuiDataGrid-iconButtonContainer"
                                       >
                                         <button
                                           aria-label="Sort"
@@ -3456,7 +3456,7 @@ exports[`snapshot test 1`] = `
                                         </div>
                                       </div>
                                       <div
-                                        class="MuiDataGrid-iconButtonContainer css-m14aj4-MuiDataGrid-iconButtonContainer"
+                                        class="MuiDataGrid-iconButtonContainer css-ltf0zy-MuiDataGrid-iconButtonContainer"
                                       >
                                         <button
                                           aria-label="Sort"
@@ -3556,7 +3556,7 @@ exports[`snapshot test 1`] = `
                                         </div>
                                       </div>
                                       <div
-                                        class="MuiDataGrid-iconButtonContainer css-m14aj4-MuiDataGrid-iconButtonContainer"
+                                        class="MuiDataGrid-iconButtonContainer css-ltf0zy-MuiDataGrid-iconButtonContainer"
                                       >
                                         <button
                                           aria-label="Sort"
@@ -3633,7 +3633,7 @@ exports[`snapshot test 1`] = `
                                   class="MuiDataGrid-columnHeader MuiDataGrid-columnHeader--alignCenter MuiDataGrid-columnHeader--sortable MuiDataGrid-withBorderColor"
                                   data-field="isBuying"
                                   role="columnheader"
-                                  style="width: 100px;"
+                                  style="width: 150px;"
                                   tabindex="-1"
                                 >
                                   <div
@@ -3656,7 +3656,7 @@ exports[`snapshot test 1`] = `
                                         </div>
                                       </div>
                                       <div
-                                        class="MuiDataGrid-iconButtonContainer css-m14aj4-MuiDataGrid-iconButtonContainer"
+                                        class="MuiDataGrid-iconButtonContainer css-ltf0zy-MuiDataGrid-iconButtonContainer"
                                       >
                                         <button
                                           aria-label="Sort"
@@ -3787,7 +3787,7 @@ exports[`snapshot test 1`] = `
                             </div>
                           </div>
                           <div
-                            class="MuiDataGrid-overlayWrapper css-16jip3q-MuiDataGrid-overlayWrapper"
+                            class="MuiDataGrid-overlayWrapper css-15uopd4-MuiDataGrid-overlayWrapper"
                           >
                             <div
                               class="MuiDataGrid-overlayWrapperInner css-1mbsuzk-MuiDataGrid-overlayWrapperInner"
@@ -3819,7 +3819,7 @@ exports[`snapshot test 1`] = `
                             </div>
                           </div>
                           <div
-                            class="MuiDataGrid-virtualScrollerContent css-qghlpz-MuiDataGrid-virtualScrollerContent"
+                            class="MuiDataGrid-virtualScrollerContent css-aymtem-MuiDataGrid-virtualScrollerContent"
                             role="presentation"
                             style="width: auto; flex-basis: var(--DataGrid-overlayHeight, calc(var(--height) * 2)); flex-shrink: 0;"
                           >
@@ -3841,7 +3841,7 @@ exports[`snapshot test 1`] = `
                         >
                           <div
                             class="MuiDataGrid-scrollbarContent"
-                            style="width: 750px;"
+                            style="width: 850px;"
                           />
                         </div>
                       </div>
@@ -3951,9 +3951,9 @@ exports[`snapshot test 1`] = `
                       </div>
                     </div>
                     <style
-                      href="/MuiDataGridVariables-2677499979"
+                      href="/MuiDataGridVariables-1736526791"
                     >
-                      .MuiDataGridVariables-2677499979{--DataGrid-t-spacing-unit:var(--template-spacing);--DataGrid-t-color-border-base:var(--template-palette-TableCell-border);--DataGrid-t-color-background-base:var(--template-palette-background-paper);--DataGrid-t-color-background-overlay:var(--template-palette-background-paper);--DataGrid-t-color-background-backdrop:rgba(var(--template-palette-background-defaultChannel) / var(--template-palette-action-disabledOpacity));--DataGrid-t-color-foreground-base:var(--template-palette-text-primary);--DataGrid-t-color-foreground-muted:var(--template-palette-text-secondary);--DataGrid-t-color-foreground-accent:var(--template-palette-primary-dark);--DataGrid-t-color-foreground-disabled:var(--template-palette-text-disabled);--DataGrid-t-color-foreground-error:var(--template-palette-error-dark);--DataGrid-t-color-interactive-hover:var(--template-palette-action-hover);--DataGrid-t-color-interactive-hover-opacity:var(--template-palette-action-hoverOpacity);--DataGrid-t-color-interactive-focus:rgba(from var(--template-palette-primary-main) r g b / 1);--DataGrid-t-color-interactive-focus-opacity:var(--template-palette-action-focusOpacity);--DataGrid-t-color-interactive-disabled:rgba(from var(--template-palette-action-disabled) r g b / 1);--DataGrid-t-color-interactive-disabled-opacity:var(--template-palette-action-disabledOpacity);--DataGrid-t-color-interactive-selected:rgb(var(--template-palette-primary-mainChannel));--DataGrid-t-color-interactive-selected-opacity:var(--template-palette-action-selectedOpacity);--DataGrid-t-header-background-base:var(--template-palette-background-paper);--DataGrid-t-cell-background-pinned:var(--template-palette-background-paper);--DataGrid-t-radius-base:var(--template-shape-borderRadius);--DataGrid-t-typography-font-family-base:Inter, sans-serif;--DataGrid-t-typography-font-weight-light:300;--DataGrid-t-typography-font-weight-regular:400;--DataGrid-t-typography-font-weight-medium:500;--DataGrid-t-typography-font-weight-bold:700;--DataGrid-t-typography-font-body:var(--template-font-body2);--DataGrid-t-typography-font-small:var(--template-font-caption);--DataGrid-t-typography-font-large:var(--template-font-body1);--DataGrid-t-transition-easing-ease-in:cubic-bezier(0.4, 0, 1, 1);--DataGrid-t-transition-easing-ease-out:cubic-bezier(0.0, 0, 0.2, 1);--DataGrid-t-transition-easing-ease-in-out:cubic-bezier(0.4, 0, 0.2, 1);--DataGrid-t-transition-duration-short:200ms;--DataGrid-t-transition-duration-base:250ms;--DataGrid-t-transition-duration-long:300ms;--DataGrid-t-shadow-base:var(--template-shadows-2);--DataGrid-t-shadow-overlay:var(--template-shadows-8);--DataGrid-t-z-index-panel:var(--template-zIndex-modal);--DataGrid-t-z-index-menu:var(--template-zIndex-modal);}
+                      .MuiDataGridVariables-1736526791{--DataGrid-t-spacing-unit:var(--template-spacing);--DataGrid-t-color-border-base:var(--template-palette-TableCell-border);--DataGrid-t-color-background-base:var(--template-palette-background-paper);--DataGrid-t-color-background-overlay:var(--template-palette-background-paper);--DataGrid-t-color-background-backdrop:rgba(var(--template-palette-background-defaultChannel) / var(--template-palette-action-disabledOpacity));--DataGrid-t-color-foreground-base:var(--template-palette-text-primary);--DataGrid-t-color-foreground-muted:var(--template-palette-text-secondary);--DataGrid-t-color-foreground-accent:var(--template-palette-primary-dark);--DataGrid-t-color-foreground-disabled:var(--template-palette-text-disabled);--DataGrid-t-color-foreground-error:var(--template-palette-error-dark);--DataGrid-t-color-interactive-hover:var(--template-palette-action-hover);--DataGrid-t-color-interactive-hover-opacity:var(--template-palette-action-hoverOpacity);--DataGrid-t-color-interactive-focus:rgba(from var(--template-palette-primary-main) r g b / 1);--DataGrid-t-color-interactive-focus-opacity:var(--template-palette-action-focusOpacity);--DataGrid-t-color-interactive-disabled:rgba(from var(--template-palette-action-disabled) r g b / 1);--DataGrid-t-color-interactive-disabled-opacity:var(--template-palette-action-disabledOpacity);--DataGrid-t-color-interactive-selected:rgb(var(--template-palette-primary-mainChannel));--DataGrid-t-color-interactive-selected-opacity:var(--template-palette-action-selectedOpacity);--DataGrid-t-header-background-base:var(--template-palette-background-paper);--DataGrid-t-cell-background-pinned:var(--template-palette-background-paper);--DataGrid-t-radius-base:var(--template-shape-borderRadius);--DataGrid-t-typography-font-family-base:Inter, sans-serif;--DataGrid-t-typography-font-weight-light:300;--DataGrid-t-typography-font-weight-regular:400;--DataGrid-t-typography-font-weight-medium:500;--DataGrid-t-typography-font-weight-bold:700;--DataGrid-t-typography-font-body:var(--template-font-body2);--DataGrid-t-typography-font-small:var(--template-font-caption);--DataGrid-t-typography-font-large:var(--template-font-body1);--DataGrid-t-transition-easing-ease-in:cubic-bezier(0.4, 0, 1, 1);--DataGrid-t-transition-easing-ease-out:cubic-bezier(0.0, 0, 0.2, 1);--DataGrid-t-transition-easing-ease-in-out:cubic-bezier(0.4, 0, 0.2, 1);--DataGrid-t-transition-duration-short:200ms;--DataGrid-t-transition-duration-base:250ms;--DataGrid-t-transition-duration-long:300ms;--DataGrid-t-shadow-base:var(--template-shadows-2);--DataGrid-t-shadow-overlay:var(--template-shadows-8);--DataGrid-t-z-index-panel:var(--template-zIndex-modal);--DataGrid-t-z-index-menu:var(--template-zIndex-modal);}
                     </style>
                   </div>
                 </div>

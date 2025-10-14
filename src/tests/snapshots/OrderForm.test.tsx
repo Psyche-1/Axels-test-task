@@ -1,7 +1,7 @@
 import * as React from "react";
 import { render } from "@testing-library/react";
 import { expect, test } from "vitest";
-import { OrderList } from "../tsx";
+import { OrderForm } from "../../components/tsx";
 import { createHashRouter, RouterProvider } from "react-router";
 import AppTheme from "../../shared-theme/AppTheme";
 import CssBaseline from "@mui/material/CssBaseline";
@@ -14,13 +14,19 @@ const router = createHashRouter([
     children: [
       {
         path: '*',
-        Component: OrderList,
+        element: <OrderForm
+                        formState={{values: { status: "Business", isBuying: true}, errors: {}} }
+                        onFieldChange={() => {}}
+                        onSubmit={() => {}}
+                        onReset={() => {}}
+                        submitButtonLabel="Create"
+                    />,
       },
     ],
   },
 ]);
 
-test('Snapshot test OrderList', () => {
+test('Snapshot test OrderForm', () => {
     const component = render(
         <AppTheme>
             <CssBaseline enableColorScheme />
