@@ -1,0 +1,212 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`Snapshot test DashboardHeader 1`] = `
+{
+  "asFragment": [Function],
+  "baseElement": <body>
+    <div>
+      <header
+        class="MuiPaper-root MuiPaper-elevation MuiPaper-elevation4 MuiAppBar-root MuiAppBar-colorInherit MuiAppBar-positionAbsolute css-rwkbif-MuiPaper-root-MuiAppBar-root"
+        style="--Paper-shadow: 0px 2px 4px -1px rgba(0,0,0,0.2),0px 4px 5px 0px rgba(0,0,0,0.14),0px 1px 10px 0px rgba(0,0,0,0.12);"
+      >
+        <div
+          class="MuiToolbar-root MuiToolbar-gutters MuiToolbar-regular css-mte97l-MuiToolbar-root"
+        >
+          <div
+            class="MuiStack-root css-ua372z-MuiStack-root"
+          >
+            <div
+              class="MuiStack-root css-1d9cypr-MuiStack-root"
+            >
+              <div
+                class="MuiBox-root css-12z0wuy"
+              >
+                <div
+                  aria-label="Expand menu"
+                  class=""
+                  data-mui-internal-clone-element="true"
+                >
+                  <button
+                    aria-label="Expand navigation menu"
+                    class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeSmall css-155wbr6-MuiButtonBase-root-MuiIconButton-root"
+                    tabindex="0"
+                    type="button"
+                  >
+                    <svg
+                      aria-hidden="true"
+                      class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-1umw9bq-MuiSvgIcon-root"
+                      data-testid="MenuIcon"
+                      focusable="false"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        d="M3 18h18v-2H3zm0-5h18v-2H3zm0-7v2h18V6z"
+                      />
+                    </svg>
+                  </button>
+                </div>
+              </div>
+              <a
+                data-discover="true"
+                href="#/"
+                style="text-decoration: none;"
+              >
+                <div
+                  class="MuiStack-root css-1d9cypr-MuiStack-root"
+                />
+              </a>
+            </div>
+            <div
+              class="MuiStack-root css-ktx3up-MuiStack-root"
+            >
+              <div
+                class="MuiStack-root css-1d9cypr-MuiStack-root"
+              >
+                <div
+                  aria-label="Dark mode"
+                  class=""
+                  data-mui-internal-clone-element="true"
+                >
+                  <button
+                    aria-label="Switch to dark mode"
+                    class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeSmall css-155wbr6-MuiButtonBase-root-MuiIconButton-root"
+                    tabindex="0"
+                    type="button"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+    </div>
+  </body>,
+  "container": <div>
+    <header
+      class="MuiPaper-root MuiPaper-elevation MuiPaper-elevation4 MuiAppBar-root MuiAppBar-colorInherit MuiAppBar-positionAbsolute css-rwkbif-MuiPaper-root-MuiAppBar-root"
+      style="--Paper-shadow: 0px 2px 4px -1px rgba(0,0,0,0.2),0px 4px 5px 0px rgba(0,0,0,0.14),0px 1px 10px 0px rgba(0,0,0,0.12);"
+    >
+      <div
+        class="MuiToolbar-root MuiToolbar-gutters MuiToolbar-regular css-mte97l-MuiToolbar-root"
+      >
+        <div
+          class="MuiStack-root css-ua372z-MuiStack-root"
+        >
+          <div
+            class="MuiStack-root css-1d9cypr-MuiStack-root"
+          >
+            <div
+              class="MuiBox-root css-12z0wuy"
+            >
+              <div
+                aria-label="Expand menu"
+                class=""
+                data-mui-internal-clone-element="true"
+              >
+                <button
+                  aria-label="Expand navigation menu"
+                  class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeSmall css-155wbr6-MuiButtonBase-root-MuiIconButton-root"
+                  tabindex="0"
+                  type="button"
+                >
+                  <svg
+                    aria-hidden="true"
+                    class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-1umw9bq-MuiSvgIcon-root"
+                    data-testid="MenuIcon"
+                    focusable="false"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      d="M3 18h18v-2H3zm0-5h18v-2H3zm0-7v2h18V6z"
+                    />
+                  </svg>
+                </button>
+              </div>
+            </div>
+            <a
+              data-discover="true"
+              href="#/"
+              style="text-decoration: none;"
+            >
+              <div
+                class="MuiStack-root css-1d9cypr-MuiStack-root"
+              />
+            </a>
+          </div>
+          <div
+            class="MuiStack-root css-ktx3up-MuiStack-root"
+          >
+            <div
+              class="MuiStack-root css-1d9cypr-MuiStack-root"
+            >
+              <div
+                aria-label="Dark mode"
+                class=""
+                data-mui-internal-clone-element="true"
+              >
+                <button
+                  aria-label="Switch to dark mode"
+                  class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeSmall css-155wbr6-MuiButtonBase-root-MuiIconButton-root"
+                  tabindex="0"
+                  type="button"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+  </div>,
+  "debug": [Function],
+  "findAllByAltText": [Function],
+  "findAllByDisplayValue": [Function],
+  "findAllByLabelText": [Function],
+  "findAllByPlaceholderText": [Function],
+  "findAllByRole": [Function],
+  "findAllByTestId": [Function],
+  "findAllByText": [Function],
+  "findAllByTitle": [Function],
+  "findByAltText": [Function],
+  "findByDisplayValue": [Function],
+  "findByLabelText": [Function],
+  "findByPlaceholderText": [Function],
+  "findByRole": [Function],
+  "findByTestId": [Function],
+  "findByText": [Function],
+  "findByTitle": [Function],
+  "getAllByAltText": [Function],
+  "getAllByDisplayValue": [Function],
+  "getAllByLabelText": [Function],
+  "getAllByPlaceholderText": [Function],
+  "getAllByRole": [Function],
+  "getAllByTestId": [Function],
+  "getAllByText": [Function],
+  "getAllByTitle": [Function],
+  "getByAltText": [Function],
+  "getByDisplayValue": [Function],
+  "getByLabelText": [Function],
+  "getByPlaceholderText": [Function],
+  "getByRole": [Function],
+  "getByTestId": [Function],
+  "getByText": [Function],
+  "getByTitle": [Function],
+  "queryAllByAltText": [Function],
+  "queryAllByDisplayValue": [Function],
+  "queryAllByLabelText": [Function],
+  "queryAllByPlaceholderText": [Function],
+  "queryAllByRole": [Function],
+  "queryAllByTestId": [Function],
+  "queryAllByText": [Function],
+  "queryAllByTitle": [Function],
+  "queryByAltText": [Function],
+  "queryByDisplayValue": [Function],
+  "queryByLabelText": [Function],
+  "queryByPlaceholderText": [Function],
+  "queryByRole": [Function],
+  "queryByTestId": [Function],
+  "queryByText": [Function],
+  "queryByTitle": [Function],
+  "rerender": [Function],
+  "unmount": [Function],
+}
+`;
